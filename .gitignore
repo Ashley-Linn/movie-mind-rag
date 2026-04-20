@@ -1,4 +1,14 @@
-data/,
-__pycache__/,
-.venv/,
+# Data
+data/
+*.csv
+*.parquet
 *.index
+
+# Python & UV
+.venv/
+__pycache__/
+.uv/
+
+# OS
+.DS_Store
+.env
