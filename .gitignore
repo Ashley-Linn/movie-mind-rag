@@ -1,14 +1,45 @@
-# Data
-data/
-*.csv
-*.parquet
-*.index
-
-# Python & UV
-.venv/
+# Byte-compiled / cache
 __pycache__/
-.uv/
+*.py[cod]
 
-# OS
-.DS_Store
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Environment variables
 .env
+
+# Data and index directories (large files, not to be committed)
+data/
+index/
+
+# Evaluation 
+evaluation/results/
+evaluation/scripts/
+evaluation/data/sampled_movies_for_qa.csv
+evaluation/data/seed_en.csv
+
+# experimental scripts 
+tests/
+scripts/generate_summaries_lsa.py
+scripts/offline_translate.py
+scripts/translate_metadata_youdao.py
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# OS metadata
+.DS_Store
+
+# IDE (optional)
+.vscode/
+.idea/
+
+# Dependency lock files (optional, if you prefer requirements.txt)
+uv.lock
+pyproject.toml
+
+# Non-entry script (not needed)
+main.py
